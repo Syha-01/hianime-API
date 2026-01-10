@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: hianime-api
-    runtime: node
-    buildCommand: bun install
-    startCommand: bun index.js
-    envVars:
-      - key: PORT
-        value: "10000"

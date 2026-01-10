@@ -1,31 +1,22 @@
-# Deploy to Render
+# Deploy to Vercel
 
-This API is configured to be easily deployed on [Render](https://render.com).
+This API is configured to be easily deployed on [Vercel](https://vercel.com).
 
 ## Automatic Deployment (Recommended)
 
-1.  **Push Changes**: Ensure you have pushed the `render.yaml` file to your GitHub repository.
+1.  **Push Changes**: Ensure you have pushed the `api` folder and `vercel.json` file to your GitHub repository.
     ```bash
-    git add render.yaml
-    git commit -m "Add Render deployment configuration"
+    git add .
+    git commit -m "Add Vercel deployment configuration"
     git push origin main
     ```
-2.  **Create Blueprint**:
-    *   Go to your Render Dashboard.
-    *   Click on **New +** and select **Blueprint**.
-    *   Connect your GitHub repository (`yahyaMomin/hianime-API`).
-    *   Render will automatically detect the `render.yaml` file and configure the service.
-    *   Click **Apply** to start the deployment.
 
-## Manual Deployment
+2.  **Deploy**:
+    *   Click the "Deploy to Vercel" button in the `README.md`.
+    *   **OR** Go to your Vercel Dashboard, click **Add New Project**, import your repository, and click **Deploy**.
+    *   Vercel will automatically detect the configuration.
 
-If you prefer to configure it manually without `render.yaml`:
+## Manual Deployment (CLI)
 
-1.  Create a new **Web Service** on Render.
-2.  Connect your repository.
-3.  Use the following settings:
-    *   **Runtime**: Bun
-    *   **Build Command**: `bun install`
-    *   **Start Command**: `bun index.js`
-4.  Add Environment Variable:
-    *   `PORT`: `10000` (or any port, Render assigns one automatically but it's good practice)
+1.  Install Vercel CLI: `npm i -g vercel`
+2.  Run `vercel` in the project root.

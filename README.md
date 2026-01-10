@@ -65,7 +65,7 @@ http://localhost:3030/doc
 
 ### Deploy on Render
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Syha-01/hianime-API)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSyha-01%2Fhianime-API)
 
 ---
 
