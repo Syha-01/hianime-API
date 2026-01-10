@@ -2,9 +2,9 @@
 
 This API is configured to be easily deployed on [Vercel](https://vercel.com).
 
-## Automatic Deployment (Recommended)
+## Automatic Deployment
 
-1.  **Push Changes**: Ensure you have pushed the `api` folder and `vercel.json` file to your GitHub repository.
+1.  **Push Changes**:
     ```bash
     git add .
     git commit -m "Add Vercel deployment configuration"
@@ -12,9 +12,14 @@ This API is configured to be easily deployed on [Vercel](https://vercel.com).
     ```
 
 2.  **Deploy**:
-    *   Click the "Deploy to Vercel" button in the `README.md`.
-    *   **OR** Go to your Vercel Dashboard, click **Add New Project**, import your repository, and click **Deploy**.
-    *   Vercel will automatically detect the configuration.
+    *   Click the **Deploy with Vercel** button in the `README.md`.
+    *   **OR** Import your repository on Vercel.
+
+### How it works
+This project uses **Bun** to build the application for Vercel Serverless.
+*   The `build` script in `package.json` runs `bun build`.
+*   This transforms `api/_entry.js` (and all imports) into a single optimized `api/index.js` file.
+*   Vercel deploys this file as a Node.js Serverless Function.
 
 ## Manual Deployment (CLI)
 
