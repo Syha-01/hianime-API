@@ -16,8 +16,8 @@
     "prepare": "husky",
     "lint": "eslint",
     "lint:fix": "eslint --fix && prettier . --write",
-    "dev": "bun --hot index.js",
-    "start": "bun index.js",
+    "dev": "bun --hot bun-server.js",
+    "start": "bun bun-server.js",
     "test": "vitest"
   },
   "dependencies": {

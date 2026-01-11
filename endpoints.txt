@@ -1,16 +1,16 @@
 Base URL:
-https://hianime-api4-git-main-syha-01s-projects.vercel.app/api/v1
+https://hianime-api-sigma.vercel.app/api/v1
 
 Test Endpoints:
 ----------------
 1. Home Page Data
 GET /home
-URL: https://hianime-api4-git-main-syha-01s-projects.vercel.app/api/v1/home
+URL: https://hianime-api-sigma.vercel.app/api/v1/home
 
 2. Search (Example: "One Piece")
 GET /search
-URL: https://hianime-api4-git-main-syha-01s-projects.vercel.app/api/v1/search?keyword=one%20piece
+URL: https://hianime-api-sigma.vercel.app/api/v1/search?keyword=one%20piece
 
 3. Anime Details (Example: One Piece)
 GET /anime/:id
-URL: https://hianime-api4-git-main-syha-01s-projects.vercel.app/api/v1/anime/one-piece-100
+URL: https://hianime-api-sigma.vercel.app/api/v1/anime/one-piece-100
