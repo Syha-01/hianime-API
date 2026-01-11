@@ -2,8 +2,8 @@ import { OpenAPIHono } from '@hono/zod-openapi';
 import { rateLimiter } from 'hono-rate-limiter';
 import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
-import { fail } from '../utils/response';
-import { AppError } from '../utils/errors';
+import { fail } from '../utils/response.js';
+import { AppError } from '../utils/errors.js';
 import zodValidationHook from '@/middlewares/hook';
 import { htmlAsString } from '@/utils/htmlAsString';
 
