@@ -18,8 +18,7 @@
     "lint:fix": "eslint --fix && prettier . --write",
     "dev": "bun --hot index.js",
     "start": "bun index.js",
-    "test": "vitest",
-    "build": "bun build api/_entry.js --outfile api/index.js --target node --format esm"
+    "test": "vitest"
   },
   "dependencies": {
     "@hono/swagger-ui": "^0.5.3",

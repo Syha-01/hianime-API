@@ -17,10 +17,15 @@ This API is configured to be easily deployed on [Vercel](https://vercel.com).
 
 ### How it works
 This project uses **Bun** to build the application for Vercel Serverless.
-*   The `build` script in `package.json` runs `bun build`.
-*   This transforms `api/_entry.js` (and all imports) into a single optimized `api/index.js` file.
-*   **Note**: A `public` directory with an `index.html` is required by Vercel when a build script is present, even if not served directly. This project includes one.
+*   **Note**: We pre-build the API locally using `bun build` to resolve path aliases (`@/`). The resulting `api/index.js` is committed to the repository.
 *   Vercel deploys `api/index.js` as a Node.js Serverless Function.
+
+## Local Development (Re-building)
+
+If you modify the code, you must re-build the API before pushing:
+```bash
+bun build api/_entry.js --outfile api/index.js --target node --format esm
+```
 
 ## Manual Deployment (CLI)
 
